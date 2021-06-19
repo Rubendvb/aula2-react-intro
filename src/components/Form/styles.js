@@ -5,7 +5,8 @@ export const TaskForm = styled.form`
   padding: 20px 40px;
   border-radius: 10px;
 
-  input, select{
+  input,
+  select {
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -14,7 +15,7 @@ export const TaskForm = styled.form`
 `;
 
 export const Button = styled.button`
-  background: ${(props)=> props.theme.primaryColor};
+  background: ${(props) => props.theme.primaryColor};
   border-radius: 10px;
   border: none;
   color: #fff;

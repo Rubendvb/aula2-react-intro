@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.li`
   background-color: #eee;
@@ -20,4 +20,3 @@ export const RemoveButton = styled.button`
   cursor: pointer;
   color: #fff;
 `;
-
