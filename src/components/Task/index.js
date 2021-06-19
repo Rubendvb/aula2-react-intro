@@ -1,11 +1,14 @@
 import React from 'react';
+import { Container, RemoveButton } from './styles';
 
 const Task = ({todo, remove}) =>{
   return(
-    <li>
+    <Container>
       {todo.text}
-      <button onClick={(e)=>remove(e, todo.text)}>-</button>
-    </li>
+      <RemoveButton onClick={(e)=>remove(e, todo.text)}>
+        Remover Task
+      </RemoveButton>
+    </Container>
   )
 }
 

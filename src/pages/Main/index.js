@@ -7,16 +7,28 @@ class Main extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
+      data: {high:[], medium:[], low:[]},
     }
   }
 
-  addTodo(event, val){
+  addTodo(event, taskDescription, priority){
     event.preventDefault();
 
-    const todo = { text: val };
+    const todo = { text: taskDescription, priority: priority };
 
-    this.state.data.push(todo);
+    switch (priority){
+      case 'high':
+        this.state.data.high.push(todo);
+        break;
+      case 'medium':
+        this.state.data.medium.push(todo);
+        break;
+      case 'low':
+        this.state.data.low.push(todo);
+        break;
+      default:
+        break;
+    }
 
     this.setState({data: this.state.data});
   };
